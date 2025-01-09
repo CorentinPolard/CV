@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Corentin Polard, aspirant développeur web. Découvrez mon CV en ligne.">
-    <meta name="keywords" content="CV, Développement Web, Simplon, HTML, CSS, Mathématiques, informatique">
     <link rel="stylesheet"  href="style.css">
     <title>Corentin Polard</title>
 </head>
 <body>
     <header>
-        <!-- Header contenant, photo, nom, métier, description personnelle-->
         <div class="img-container">
             <img class="moi" src="photo_CV.jpg" alt="Photo de Corentin Polard">
         </div>
@@ -79,7 +77,8 @@
             </dl>
         </div>
         
-        <div class="experiences">
+        <button id="button1">Cliquez pour voir mes expériences</button>
+        <div class="experiences" style="display: none;">
             <h2 class="titre">Expériences</h2>
             <dl>
                 <dt>Plateau technique en Développement Web</dt>
@@ -110,5 +109,7 @@
         <!-- <img src="./Images/mail-svgrepo-com.svg" alt="Icône d'Email" class="icone"> -->
         <p class="mail">Email : corentinpolard@gmail.com</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

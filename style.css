@@ -73,6 +73,10 @@ main{
     width: 93.5%; /* Alligné avec les blocs compétences et qualités */
 }
 
+/* .experiences {
+    display: none;
+} */
+
 .parcours dt, .experiences dt {
     font-weight: bold;
     padding: 10px 10px 0 10px;
@@ -80,6 +84,17 @@ main{
 
 dd {
     padding-right: 5px;
+}
+
+#button1 {
+    margin: 10px 0 10px 0;
+    background-color: rgb(105, 149, 105);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
 }
 
 footer {
