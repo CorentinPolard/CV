@@ -89,10 +89,46 @@ footer {
     flex-wrap: wrap; */
 }
 
+footer h2 {
+    margin-top: 0;
+}
+
 
 .mail {
     margin-bottom: 0;
 }
 
 /* Header : Augmenter font-size pour écran plus grands mais OK jusqu'à tablette */
-/* Centrer listes à partir de tablettes */
+@media screen and (min-width: 768px) {
+    header p {
+        font-size: 1.2em;
+    }
+
+    .competences, .qualites, .passions {
+        width: 30%;
+    }
+
+    .parcours, .experiences {
+        width: 95.5%; /* Alligné avec les blocs compétences et qualités */
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .img-container {
+        width: 40%;
+    }
+
+    .text-container {
+        width: 55%;
+    }
+
+    .text-container h1 {
+        font-size: 3em;
+    }
+
+    .text-container p {
+        font-size: 2em;
+    }
+}
