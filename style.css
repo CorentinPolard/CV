@@ -73,9 +73,9 @@ main{
     width: 93.5%; /* Alligné avec les blocs compétences et qualités */
 }
 
-/* .experiences {
+.mask {
     display: none;
-} */
+}
 
 .parcours dt, .experiences dt {
     font-weight: bold;
