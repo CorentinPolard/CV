@@ -20,18 +20,10 @@ bouton1.addEventListener("click", function() {
 const reposDiv = document.getElementById("repos");
 const display = document.querySelector("#display");
 
-// Jeton d'accès personnel (Remplacez par votre propre jeton sécurisé)
-const token = "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";
-
-
 // Fonction pour récupérer et afficher les dépôts publics GitHub
 async function fetchGitHubRepos(username) {
     try {
-        const response = await fetch(`https://api.github.com/users/${username}/repos`, {
-            headers: {
-                Authorization: `Bearer ${token}`
-            }
-        });
+        const response = await fetch(`https://api.github.com/users/${username}/repos`);
         if (!response.ok) {
             throw new Error(`GitHub repos not found: ${response.statusText}`);
         }
