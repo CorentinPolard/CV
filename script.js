@@ -21,16 +21,15 @@ const reposDiv = document.getElementById("repos");
 const display = document.querySelector("#display");
 
 // Jeton d'accès personnel (Remplacez par votre propre jeton sécurisé)
-const token = "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";
-
+// const token = "";
 
 // Fonction pour récupérer et afficher les dépôts publics GitHub
 async function fetchGitHubRepos(username) {
     try {
         const response = await fetch(`https://api.github.com/users/${username}/repos`, {
-            headers: {
-                Authorization: `Bearer ${token}`
-            }
+            // headers: {
+            //     Authorization: `Bearer ${token}`
+            // }
         });
         if (!response.ok) {
             throw new Error(`GitHub repos not found: ${response.statusText}`);
