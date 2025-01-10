@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="img-container">
-            <img class="moi" src="photo_CV.jpg" alt="Photo de Corentin Polard">
+            <img class="moi" src="photo_cv.jpg" alt="Photo de Corentin Polard">
         </div>
         <div class="text-container">
             <h1>Corentin Polard</h1>
@@ -20,9 +20,8 @@
         <br>
         Ayant un intérêt marqué pour l'informatique, je me réoriente grâce à une formation de Développeur Web et Web Mobile avec Simplon.
         </p>
-        <!-- Contacts ici ? -->
-        <!-- Inclure une nav bar ? -->
     </header>
+
     <main>
         <div class="competences">
             <h2 class="titre">Compétences</h2>
@@ -58,10 +57,9 @@
         
         <div class="parcours">
             <h2 class="titre">Parcours</h2>
-            <!-- Comment structurer le parcours ? ul? dl? p?  -->
             <dl>
                 <dt>Titre professionnel Développeur Web et Web Mobile</dt>
-                <dd>Simplon Clermont-Ferrand - Décembre 2024/Présent 
+                <dd>Simplon Clermont-Ferrand - Décembre&nbsp;2024/Présent 
                     <br>
                     En cours d'acquisition
                 </dd>
@@ -82,32 +80,39 @@
             <h2 class="titre">Expériences</h2>
             <dl>
                 <dt>Plateau technique en Développement Web</dt>
-                <dd>Afpa Beaumont - Octobre 2024
+                <dd>Afpa Beaumont - Octobre&nbsp;2024
                     <br>
                     Immersion à l'Afpa pour apprendre à travailler la structure d'une page web en HTML, son design en CSS et son interactivité en JavaScript.
                 </dd>
                 <dt>Emploi saisonnier</dt>
-                <dd>Plouvorn - Étés 2018, 2019 et 2020
+                <dd>Plouvorn - Étés&nbsp;2018, 2019 et 2020
                     <br>
                     Travail en équipe dans une exploitation agricole pour planter des choux-fleurs.
                 </dd>
                 <dt>Stage d'observation</dt>
-                <dd>École Anita-conti - Plouescat - Mars 2018
+                <dd>École Anita-conti - Plouescat - Mars&nbsp;2018
                     <br>
                     Découverte du métier de professeur des écoles et prise en charge de petits groupes d'élèves allant du CP jusqu'au CM2.
                 </dd>
             </dl>
         </div>
+
+        <button id="display"> Afficher mes projets </button>
+        <div class="repository">
+            <h2>Repositories</h2>
+            <div id="repos"></div>
+        </div>
     </main>
 
-    <!-- Bouton pour retourner en haut de page en position sticky ? -->
-    <!-- Portfolio ici ? -->
     <footer>
         <h2>Coordonnées</h2>
-        <p class="adresse">Adresse : 30 rue de la Pradelle, 63000 Clermont-Ferrand</p>
-        <p class="tel">Téléphone : 06 51 33 80 98</p>
+        <address class="coordonnees">
+            Adresse : 30 rue de la Pradelle, 63000 Clermont-Ferrand
+            <br>
+            Téléphone : <a href="tel:+0651338098">06 51 33 80 98</a>
+            <br>
         <!-- <img src="./Images/mail-svgrepo-com.svg" alt="Icône d'Email" class="icone"> -->
-        <p class="mail">Email : corentinpolard@gmail.com</p>
+            Email : <a href="mailto:corentinpolard@gmail.com">corentinpolard@gmail.com</a></address>
     </footer>
 
     <script src="script.js"></script>
