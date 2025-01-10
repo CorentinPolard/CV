@@ -1,17 +1,15 @@
 const bouton1 = document.getElementById("button1");
 
 bouton1.addEventListener("click", function() {
-  let experiences = document.getElementsByClassName("experiences")[0];
-  // Va ajouter la classe mask qui fixe display: none; si elle ne l'a pas et la retirer si elle l'a
-  if (experiences.style.display !== "none") {
+    let experiences = document.getElementsByClassName("experiences")[0];
+    // Va ajouter la classe mask qui fixe display: none; si elle ne l'a pas et la retirer si elle l'a
     experiences.classList.toggle("mask");
     if (experiences.classList.contains("mask") === false) {
-      bouton1.textContent = "Masquer les expériences";
+        bouton1.textContent = "Masquer les expériences";
     }
     else {
-      bouton1.textContent = "Afficher les expériences";
+        bouton1.textContent = "Afficher les expériences";
     }
-  }
 });
 
 
@@ -23,7 +21,7 @@ const reposDiv = document.getElementById("repos");
 const display = document.querySelector("#display");
 
 // Jeton d'accès personnel (Remplacez par votre propre jeton sécurisé)
-const token = "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";
+const token = "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";
 
 
 // Fonction pour récupérer et afficher les dépôts publics GitHub
