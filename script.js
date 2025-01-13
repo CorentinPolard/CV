@@ -1,7 +1,7 @@
-const bouton1 = document.getElementById("button1");
+const bouton1 = document.getElementById("bouton1");
 
 bouton1.addEventListener("click", function() {
-    let experiences = document.getElementsByClassName("experiences")[0];
+    const experiences = document.getElementsByClassName("experiences")[0];
     // Va ajouter la classe mask qui fixe display: none; si elle ne l'a pas et la retirer si elle l'a
     experiences.classList.toggle("mask");
     if (experiences.classList.contains("mask") === false) {
@@ -18,7 +18,7 @@ bouton1.addEventListener("click", function() {
 
 // Sélectionner les éléments HTML pour afficher le profil et les dépôts
 const reposDiv = document.getElementById("repos");
-const display = document.querySelector("#display");
+const bouton2 = document.querySelector("#bouton2");
 
 // Fonction pour récupérer et afficher les dépôts publics GitHub
 async function fetchGitHubRepos(username) {
@@ -48,11 +48,13 @@ async function fetchGitHubRepos(username) {
 }
 
 // Fonction pour afficher les dépots au clic
-display.addEventListener("click", async () => {
-    display.textContent = "Loading...";
+bouton2.addEventListener("click", async () => {
+    bouton2.textContent = "Loading...";
     await fetchGitHubRepos(username);
     // Faire disparaître le bouton après avoir cliqué dessus
-    display.style.display = "none";
+    bouton2.style.display = "none";
+    const repository = document.getElementsByClassName("repository")[0];
+    repository.classList.remove("mask");
 });
 
 // Appeler les fonctions avec votre nom d'utilisateur GitHub
