@@ -59,4 +59,3 @@ bouton2.addEventListener("click", async () => {
 
 // Appeler les fonctions avec votre nom d'utilisateur GitHub
 const username = "CorentinPolard"; // Remplacez par votre nom d'utilisateur GitHub
-fetchGitHubProfile(username);
