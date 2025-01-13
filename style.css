@@ -20,7 +20,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 5px 5px 0 5px;
 }
 
 .img-container .moi {
@@ -87,7 +87,7 @@ dd {
     padding-right: 5px;
 }
 
-#bouton1, #bouton2 {
+#bouton1, #bouton2, #CV {
     margin: 10px 0 10px 0;
     background-color: rgb(105, 149, 105);
     color: white;
@@ -96,6 +96,10 @@ dd {
     padding: 10px;
     font-size: 1.2em;
     cursor: pointer;
+}
+
+#CV {
+    text-decoration: none;
 }
 
 footer {
